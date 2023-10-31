@@ -1,6 +1,10 @@
+import { Flex } from "@chakra-ui/react"
+
 const App = () => {
   return (
-    <div>App</div>
+    <Flex>
+      Fonte da Vida
+    </Flex>
   )
 }
 
