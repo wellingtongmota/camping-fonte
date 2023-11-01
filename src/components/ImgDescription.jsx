@@ -10,7 +10,7 @@ const ImgDescription = ({ children, image, title }) => {
       borderRadius='none'
       maxW='17rem'
       w='full'
-      flexBasis='15rem'
+      flexBasis='14rem'
     >
       <Image
         aspectRatio={3 / 4.5}
