@@ -11,7 +11,6 @@ const App = () => {
       w='full'
       h='100dvh'
       overflowY='auto'
-      border='2px solid red'
     >
       <Navbar />
       <Outlet />
