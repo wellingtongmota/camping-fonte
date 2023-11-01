@@ -1,5 +1,5 @@
-import { Box, Button, Flex, Heading, Image } from '@chakra-ui/react'
 import React from 'react'
+import { Button, Flex, Heading } from '@chakra-ui/react'
 
 const Banner = () => {
   return (

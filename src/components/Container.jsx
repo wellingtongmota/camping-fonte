@@ -5,7 +5,6 @@ const Container = ({ children, props }) => {
   return (
     <Flex
       flexDirection='column'
-      h='full'
       w='full'
       maxW='5xl'
       pb={6}
