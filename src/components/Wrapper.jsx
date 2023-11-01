@@ -1,7 +1,7 @@
-import { Flex } from '@chakra-ui/react'
+import { Flex, Heading } from '@chakra-ui/react'
 import React from 'react'
 
-const Wrapper = ({ children, props }) => {
+const Wrapper = (props) => {
   return (
     <Flex
       py={[8, 12]}
@@ -10,7 +10,11 @@ const Wrapper = ({ children, props }) => {
       flexDirection='column'
       {...props}
     >
-      {children}
+      {props.title !== undefined &&
+        <Heading textTransform='uppercase' color='teal.900' pb={6}>{props.title}</Heading>
+      }
+
+      {props.children}
     </Flex>
   )
 }
