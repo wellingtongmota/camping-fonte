@@ -6,6 +6,7 @@ import './index.css'
 import Home from './routes/Home.jsx'
 import Login from './routes/Login.jsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import theme from './utils/theme.js'
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <RouterProvider router={router} />
     </ChakraProvider>
 )

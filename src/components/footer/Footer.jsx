@@ -1,6 +1,5 @@
-import { Flex, Text } from '@chakra-ui/react'
+import { Flex, Heading } from '@chakra-ui/react'
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -17,8 +16,7 @@ const Footer = () => {
       gap={2}
       textTransform='uppercase'
     >
-
-      <Text as={NavLink} to='/login' fontSize='xl'>ATITUDE PINDA</Text>
+      <Heading fontSize='xl'>ATITUDE PINDA</Heading>
     </Flex>
   )
 }
