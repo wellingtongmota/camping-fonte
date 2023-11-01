@@ -8,6 +8,7 @@ const Container = ({ children }) => {
       w='full'
       maxW='5xl'
       px={2}
+      py={6}
     >
       {children}
     </Flex>
