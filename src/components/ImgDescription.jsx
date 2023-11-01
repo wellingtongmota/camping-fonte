@@ -10,7 +10,7 @@ const ImgDescription = ({ children, image, title }) => {
       borderRadius='none'
       maxW='17rem'
       w='full'
-      flexBasis='14rem'
+      flexBasis={{ base: '10rem', sm: '10rem', md: '14rem', lg: '16rem' }}
     >
       <Image
         aspectRatio={3 / 4.5}
@@ -22,7 +22,16 @@ const ImgDescription = ({ children, image, title }) => {
 
       <Stack>
         <CardBody px={0} py={4}>
-          <Heading size={['lg']} color='teal.900' fontWeight='normal' w='full' textAlign='center' textTransform='uppercase'>{title}</Heading>
+          <Heading
+            size={{ base: 'md', sm: 'sm', md: 'md', lg: 'lg' }}
+            color='teal.900'
+            fontWeight='normal'
+            w='full'
+            textAlign='center'
+            textTransform='uppercase'
+          >
+            {title}
+          </Heading>
 
           <Text py='2'>
             {children}
