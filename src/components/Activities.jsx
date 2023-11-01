@@ -1,7 +1,7 @@
 import React from 'react'
-import { Flex, Heading, Text } from '@chakra-ui/react'
-import Wrapper from './Wrapper'
+import { Flex } from '@chakra-ui/react'
 import ImgDescription from './ImgDescription'
+import Wrapper from './Wrapper'
 
 import imgGincana from '../images/GINCANA.jpg'
 import imgFantasia from '../images/FANTASIA_temp.jpg'
@@ -9,7 +9,7 @@ import imgNeon from '../images/NEON.jpg'
 
 const Activities = () => {
   return (
-    <Wrapper justify='center' title='Atividades'>
+    <Wrapper justify='center' title='Atividades' justify_title='end'>
 
       <Flex flexWrap='wrap' w='full' gap={4} justify='space-evenly'>
         <ImgDescription image={imgGincana} title='Gincana'>
