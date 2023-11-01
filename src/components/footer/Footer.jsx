@@ -4,8 +4,8 @@ import React from 'react'
 const Footer = () => {
   return (
     <Flex
-      w='100%'
-      h='16rem'
+      w='full'
+      minH='12rem'
       bg='teal.900'
       textColor='gray.50'
       shadow='md'
