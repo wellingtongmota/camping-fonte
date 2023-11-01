@@ -28,6 +28,7 @@ const Banner = () => {
         maxW='xl'
         h='full'
         gap={8}
+        px={2}
       >
         <Heading textAlign='center' lineHeight='120%'>Acampamento de jovens da igreja Fonte da Vida</Heading>
 

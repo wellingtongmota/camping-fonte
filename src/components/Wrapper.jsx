@@ -4,7 +4,8 @@ import React from 'react'
 const Wrapper = ({ children, props }) => {
   return (
     <Flex
-      py={12}
+      py={[8, 12]}
+      px={2}
       w='full'
       flexDirection='column'
       {...props}

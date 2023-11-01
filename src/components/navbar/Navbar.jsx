@@ -5,7 +5,11 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
     <Flex
-      w='100%'
+      position='fixed'
+      zIndex={1}
+      top={0}
+      left={0}
+      w='full'
       h='4.5rem'
       bg='teal.900'
       textColor='gray.50'
