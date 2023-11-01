@@ -1,15 +1,15 @@
 import React from 'react'
 import { Flex } from '@chakra-ui/react'
 
-const Container = ({ children }) => {
+const Container = ({ children, props }) => {
   return (
     <Flex
       flexDirection='column'
       h='full'
       w='full'
       maxW='5xl'
-      px={2}
-      py={6}
+      pb={6}
+      {...props}
       // border='1px solid pink'
     >
       {children}

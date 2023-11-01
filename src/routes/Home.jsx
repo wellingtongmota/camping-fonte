@@ -1,11 +1,11 @@
-import { Flex } from '@chakra-ui/react'
 import React from 'react'
-import Navbar from '../components/navbar/Navbar'
 import Container from '../components/Container'
+import Banner from '../components/Banner'
 
 const Home = () => {
   return (
     <Container>
+      <Banner />
       Home
     </Container>
   )
