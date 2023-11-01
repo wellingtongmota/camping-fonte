@@ -13,7 +13,7 @@ const Navbar = () => {
       h='4.5rem'
       bg='teal.900'
       textColor='gray.50'
-      shadow='md'
+      boxShadow='2xl'
       align='center'
       justify='space-between'
       px={6}
