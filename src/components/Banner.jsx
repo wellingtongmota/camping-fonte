@@ -1,11 +1,12 @@
 import React from 'react'
-import { Button, Flex, Heading } from '@chakra-ui/react'
+import { Button, Flex, Heading, Icon } from '@chakra-ui/react'
+import { LuChevronDown } from "react-icons/lu";
 
 const Banner = () => {
   return (
     <Flex
       w='full'
-      h='100dvh'
+      h='100vh'
       bgImage="url('/arte_banner.jpg')"
       bgPosition="center"
       bgSize='cover'
@@ -13,6 +14,7 @@ const Banner = () => {
       bgRepeat="no-repeat"
       filter='auto' brightness='80%'
 
+      flexDirection='column'
       justify='center'
       align='center'
       color='white'
@@ -24,6 +26,7 @@ const Banner = () => {
         justify='center'
         align='center'
         maxW='xl'
+        h='full'
         gap={8}
       >
         <Heading textAlign='center' lineHeight='120%'>Acampamento de jovens da igreja Fonte da Vida</Heading>
@@ -41,6 +44,8 @@ const Banner = () => {
           Realizar inscrição
         </Button>
       </Flex>
+
+      <Icon as={LuChevronDown} fontSize='6xl' />
     </Flex>
   )
 }
