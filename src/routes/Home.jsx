@@ -7,10 +7,16 @@ import Leisure from '../components/Leisure'
 const Home = () => {
   return (
     <Container>
-      <Banner />
-      <Activities />
-      <Leisure />
+      {/* <Banner /> */}
+
+      <Container mt='4.5rem' maxW='5xl'>
+        <Activities />
+        <Leisure />
+      </Container>
     </Container>
+
+
+
   )
 }
 
