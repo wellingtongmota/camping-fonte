@@ -1,6 +1,7 @@
-import { Box, Flex, Heading, Image, Link, Text } from '@chakra-ui/react'
 import React from 'react'
+import { Flex, Icon, Image, Link } from '@chakra-ui/react'
 import { NavLink as RouterLink } from 'react-router-dom'
+import { LuFacebook, LuInstagram } from "react-icons/lu";
 import NavLink from './NavLink'
 
 const Navbar = () => {
@@ -35,7 +36,10 @@ const Navbar = () => {
         <NavLink to='/'>Camping</NavLink>
       </Flex>
 
-      <NavLink to='/login'>Login</NavLink>
+      <Flex gap={4} align='center'>
+        <Link href='#' isExternal ><Icon as={LuInstagram} boxSize={8} color='whiteAlpha.700' /></Link>
+        <Link href='#' isExternal ><Icon as={LuFacebook} boxSize={8} color='whiteAlpha.700' /></Link>
+      </Flex>
     </Flex>
   )
 }
