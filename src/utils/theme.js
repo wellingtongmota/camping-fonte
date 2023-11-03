@@ -20,6 +20,8 @@ const theme = extendTheme({
     Button: {
       baseStyle: {
         fontWeight: 'bold', // Normally, it is "semibold"
+        borderRadius: 'none',
+        textTransform: 'uppercase',
       },
     },
     Badge: {
@@ -37,13 +39,16 @@ const theme = extendTheme({
   },
   styles: {
     global: {
+      body: {
+        // letterSpacing: '0.1rem'
+      },
       // styles for the `span`
       span: {
         fontWeight: 'semibold'
       },
-      body: {
-        // letterSpacing: '0.1rem'
-      }
+      span: {
+        fontWeight: 'semibold',
+      },
     },
   },
   fonts: {

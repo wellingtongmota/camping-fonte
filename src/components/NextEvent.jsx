@@ -1,6 +1,6 @@
 import React from 'react'
 import Wrapper from './Wrapper'
-import { Badge, Flex, Icon, Image, Text } from '@chakra-ui/react'
+import { Badge, Button, Flex, Icon, Image, Text } from '@chakra-ui/react'
 import { LuMapPin, LuCalendarDays } from "react-icons/lu";
 
 import evento from '/arte_banner.jpg'
@@ -13,13 +13,13 @@ const NextEvent = () => {
       </Badge>
 
       <Flex
-        gap={2}
+        gap={8}
         maxW='3xl'
         align='center'
         justify='center'
         flexWrap='wrap'
         p={2}
-        // border='1px solid red'
+      // border='1px solid red'
       >
 
         <Flex
@@ -57,6 +57,17 @@ const NextEvent = () => {
             </Flex>
           </Flex>
 
+          <Button
+            mt={8}
+            w='full'
+            letterSpacing='widest'
+            color='white'
+            bg='teal.600'
+            _hover={{ backgroundColor: 'teal.700' }}
+          >
+            Realizar inscrição
+          </Button>
+
         </Flex>
 
         <Flex
@@ -68,7 +79,7 @@ const NextEvent = () => {
           bgPosition="center"
           bgSize='contain'
           bgRepeat='no-repeat'
-          // border='1px solid blue'
+        // border='1px solid blue'
         >
           <Image
             src={evento}
