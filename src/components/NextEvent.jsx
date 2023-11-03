@@ -13,13 +13,13 @@ const NextEvent = () => {
       </Badge>
 
       <Flex
-        gap={8}
-        maxW='3xl'
+        maxW='4xl'
+        w='full'
         align='center'
         justify='center'
         flexWrap='wrap'
         p={2}
-      // border='1px solid red'
+        gap={8}
       >
 
         <Flex
@@ -58,7 +58,7 @@ const NextEvent = () => {
           </Flex>
 
           <Button
-            mt={8}
+            mt={[8, 12]}
             w='full'
             letterSpacing='widest'
             color='white'
