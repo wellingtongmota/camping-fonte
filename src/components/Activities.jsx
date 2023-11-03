@@ -9,7 +9,7 @@ import imgNeon from '../images/NEON.jpg'
 
 const Activities = () => {
   return (
-    <Wrapper justify='center' title='Atividades' justify_title='end'>
+    <Wrapper justify='center' title='Atividades'>
 
       <Flex flexWrap='wrap' w='full' gap={4} justify='space-evenly'>
         <ImgDescription image={imgGincana} title='Gincana'>

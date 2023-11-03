@@ -29,7 +29,7 @@ const NextEvent = () => {
           flexDirection='column'
           align='flex-start'
           justify='center'
-          gap={4}
+          gap={6}
         // border='1px solid blue'
         >
           <Flex w='full' gap={[2, 4, 8]}>
@@ -58,7 +58,7 @@ const NextEvent = () => {
           </Flex>
 
           <Button
-            mt={[8, 12]}
+            mt={[6, 10]}
             w='full'
             letterSpacing='widest'
             color='white'
