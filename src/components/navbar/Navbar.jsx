@@ -1,6 +1,7 @@
-import { Box, Flex, Image, Link, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, Image, Link, Text } from '@chakra-ui/react'
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink as RouterLink } from 'react-router-dom'
+import NavLink from './NavLink'
 
 const Navbar = () => {
   return (
@@ -16,21 +17,25 @@ const Navbar = () => {
       boxShadow='lg'
       align='center'
       justify='space-between'
-      px={6}
+      px={[2, 4, 6]}
       py={2}
       gap={2}
       textTransform='uppercase'
     >
-      <Link as={NavLink} to='/'>
-        <Image
-          boxSize='3.4rem'
-          objectFit='cover'
-          src='/logo.png'
-          alt='Logo do site'
-        />
-      </Link>
+      <Flex gap={4} align='center'>
+        <Link as={RouterLink} to='/'>
+          <Image
+            boxSize='3.4rem'
+            objectFit='cover'
+            src='/logo.png'
+            alt='Logo do site'
+          />
+        </Link>
 
-      <Text as={NavLink} to='/login' fontSize='xl'>LOGIN</Text>
+        <NavLink to='/'>Camping</NavLink>
+      </Flex>
+
+      <NavLink to='/login'>Login</NavLink>
     </Flex>
   )
 }
