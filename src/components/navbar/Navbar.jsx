@@ -7,10 +7,10 @@ import NavLink from './NavLink'
 const Navbar = () => {
   return (
     <Flex
-      position='fixed'
-      zIndex={1}
-      top={0}
-      left={0}
+      // position='fixed'
+      // zIndex={1}
+      // top={0}
+      // left={0}
       w='full'
       h='4.5rem'
       bg='teal.900'
