@@ -12,6 +12,11 @@ const theme = extendTheme({
         letterSpacing: '0.15rem'
       },
     },
+    Text: {
+      baseStyle: {
+        color: 'gray.700',
+      },
+    },
     Button: {
       baseStyle: {
         fontWeight: 'bold', // Normally, it is "semibold"
@@ -23,31 +28,30 @@ const theme = extendTheme({
         bgColor: 'teal.50',
         letterSpacing: '0.05rem',
         borderRadius: 'full',
-        paddingInline: '1.25rem',
-        paddingBlock: '1rem',
+        paddingInline: [4, 5],
+        paddingBlock: [2, 3, 4],
         width: 'fit-content',
         fontFamily: `'Poppins', sans-serif`,
       }
     },
   },
-    styles: {
-      global: {
-        // styles for the `span`
-        span: {
-          color: 'teal.500',
-          fontWeight: 'medium'
-        },
-        body: {
-          // letterSpacing: '0.1rem'
-        }
+  styles: {
+    global: {
+      // styles for the `span`
+      span: {
+        fontWeight: 'semibold'
       },
+      body: {
+        // letterSpacing: '0.1rem'
+      }
     },
-    fonts: {
-      heading: `'Anton', sans-serif`,
-      body: `'Montserrat Variable', sans-serif`,
-      button: `'Montserrat Variable', sans-serif`,
-      // badge: `'Poppins', sans-serif`,
-    },
-  })
+  },
+  fonts: {
+    heading: `'Anton', sans-serif`,
+    body: `'Montserrat Variable', sans-serif`,
+    button: `'Montserrat Variable', sans-serif`,
+    // badge: `'Poppins', sans-serif`,
+  },
+})
 
 export default theme
