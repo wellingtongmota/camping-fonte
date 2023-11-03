@@ -14,7 +14,7 @@ const Navbar = () => {
       w='full'
       h='4.5rem'
       bg='teal.900'
-      textColor='gray.50'
+      textColor='whiteAlpha.900'
       boxShadow='lg'
       align='center'
       justify='space-between'
@@ -26,7 +26,7 @@ const Navbar = () => {
       <Flex gap={4} align='center'>
         <Link as={RouterLink} to='/'>
           <Image
-            boxSize='3.4rem'
+            boxSize='3.2rem'
             objectFit='cover'
             src='/logo.png'
             alt='Logo do site'
