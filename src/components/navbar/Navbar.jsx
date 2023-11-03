@@ -37,8 +37,8 @@ const Navbar = () => {
       </Flex>
 
       <Flex gap={4} align='center'>
-        <Link href='#' isExternal ><Icon as={LuInstagram} boxSize={8} color='whiteAlpha.700' /></Link>
-        <Link href='#' isExternal ><Icon as={LuFacebook} boxSize={8} color='whiteAlpha.700' /></Link>
+        <Link href='https://www.instagram.com/atitudepinda' isExternal ><Icon as={LuInstagram} boxSize={8} color='whiteAlpha.700' /></Link>
+        <Link href='https://www.facebook.com/atitudepinda' isExternal ><Icon as={LuFacebook} boxSize={8} color='whiteAlpha.700' /></Link>
       </Flex>
     </Flex>
   )
