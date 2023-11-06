@@ -5,10 +5,10 @@ import App from './App.jsx'
 import './index.css'
 import Home from './routes/Home.jsx'
 import Login from './routes/Login.jsx'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom'
 import theme from './utils/theme.js'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <App />,

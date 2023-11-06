@@ -65,7 +65,7 @@ const SubscribeDrawer = (props) => {
 
               <DrawerBody gap={2}>
 
-                <Flex as={Form} h='full' flexDirection='column' gap={6}>
+                <Flex as={Form} flexDirection='column' gap={6}>
                   <SubscribeInput
                     label='Nome:'
                     name='name'
