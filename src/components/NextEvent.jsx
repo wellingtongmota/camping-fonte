@@ -61,7 +61,7 @@ const NextEvent = () => {
             <Button
               mt={[6, 10]}
               w='full'
-              letterSpacing='0.25rem'
+              letterSpacing='0.2rem'
               color='white'
               bg='teal.600'
               _hover={{ backgroundColor: 'teal.700' }}
