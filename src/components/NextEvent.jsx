@@ -4,6 +4,7 @@ import { Badge, Button, Flex, Icon, Image, Text } from '@chakra-ui/react'
 import { LuMapPin, LuCalendarDays } from "react-icons/lu";
 
 import evento from '/arte_banner.jpg'
+import SubscribeDrawer from './SubscribeDrawer';
 
 const NextEvent = () => {
   return (
@@ -57,16 +58,18 @@ const NextEvent = () => {
             </Flex>
           </Flex>
 
-          <Button
-            mt={[6, 10]}
-            w='full'
-            letterSpacing='widest'
-            color='white'
-            bg='teal.600'
-            _hover={{ backgroundColor: 'teal.700' }}
-          >
-            Realizar inscrição
-          </Button>
+          <SubscribeDrawer w='full'>
+            <Button
+              mt={[6, 10]}
+              w='full'
+              letterSpacing='widest'
+              color='white'
+              bg='teal.600'
+              _hover={{ backgroundColor: 'teal.700' }}
+            >
+              Realizar inscrição
+            </Button>
+          </SubscribeDrawer>
 
         </Flex>
 
