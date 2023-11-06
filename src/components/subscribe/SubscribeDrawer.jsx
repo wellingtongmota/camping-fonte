@@ -42,9 +42,9 @@ const SubscribeDrawer = (props) => {
 
           <DrawerFooter>
             <Button variant='outline' mr={3} onClick={onClose}>
-              Cancel
+              Cancelar
             </Button>
-            <Button colorScheme='blue'>Save</Button>
+            <Button colorScheme='teal'>Enviar</Button>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

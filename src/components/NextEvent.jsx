@@ -62,9 +62,7 @@ const NextEvent = () => {
               mt={[6, 10]}
               w='full'
               letterSpacing='0.2rem'
-              color='white'
-              bg='teal.600'
-              _hover={{ backgroundColor: 'teal.700' }}
+              colorScheme='teal'
             >
               Realizar inscrição
             </Button>
