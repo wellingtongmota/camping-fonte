@@ -5,13 +5,14 @@ import {
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   Flex,
-  Input,
+  Spacer,
   useDisclosure
 } from '@chakra-ui/react'
+import { Form, Formik } from 'formik'
+import SubscribeInput from './SubscribeInput'
 
 const SubscribeDrawer = (props) => {
 
@@ -19,36 +20,80 @@ const SubscribeDrawer = (props) => {
   const btnRef = useRef()
 
   return (
-    <Flex {...props}>
-      <Flex w='full' ref={btnRef} onClick={onOpen}>
-        {props.children}
-      </Flex>
+    <Formik
+      initialValues={{
+        name: '',
+        email: '',
+      }}
 
-      <Drawer
-        isOpen={isOpen}
-        placement='right'
-        onClose={onClose}
-        finalFocusRef={btnRef}
-        size={['full', 'md']}
-      >
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
-          <DrawerHeader>Realizar inscrição</DrawerHeader>
+      onSubmit={(values, { setSubmitting }) => {
+        setTimeout(() => {
+          alert(JSON.stringify(values, null, 2));
+          setSubmitting(false);
+        }, 400);
+      }}
+    >
+      {({ isSubmitting, errors, touched, handleChange }) => (
+        <Flex {...props}>
+          <Flex w='full' ref={btnRef} onClick={onOpen}>
+            {props.children}
+          </Flex>
 
-          <DrawerBody>
-            <Input placeholder='Type here...' />
-          </DrawerBody>
+          <Drawer
+            isOpen={isOpen}
+            placement='right'
+            onClose={onClose}
+            finalFocusRef={btnRef}
+            size={['full', 'md']}
+          >
+            <DrawerOverlay />
+            <DrawerContent>
+              <DrawerCloseButton />
+              <DrawerHeader>Realizar inscrição</DrawerHeader>
 
-          <DrawerFooter>
-            <Button variant='outline' mr={3} onClick={onClose}>
-              Cancelar
-            </Button>
-            <Button colorScheme='teal'>Enviar</Button>
-          </DrawerFooter>
-        </DrawerContent>
-      </Drawer>
-    </Flex>
+              <DrawerBody gap={2}>
+
+                <Flex as={Form} h='full' flexDirection='column' gap={2}>
+                  <SubscribeInput
+                    label='Nome'
+                    name='name'
+                    // icon={<LuUser />}
+                    onChange={handleChange}
+                    placeholder='Digite seu nome completo'
+                    errors={errors.name}
+                  />
+
+                  <SubscribeInput
+                    label='E-mail'
+                    name='email'
+                    // icon={<LuUser />}
+                    onChange={handleChange}
+                    placeholder='Digite seu e-mail'
+                    errors={errors.email}
+                  />
+
+                  <Spacer />
+
+                  <Flex justifyContent='end'>
+                    <Button variant='outline' mr={3} onClick={onClose}>
+                      Cancelar
+                    </Button>
+                    <Button
+                      type='submit'
+                      colorScheme='teal'
+                      isLoading={isSubmitting}
+                      loadingText='Enviando'
+                    >
+                      Enviar
+                    </Button>
+                  </Flex>
+                </Flex>
+              </DrawerBody>
+            </DrawerContent>
+          </Drawer>
+        </Flex>
+      )}
+    </Formik>
   )
 }
 
