@@ -22,6 +22,8 @@ const theme = extendTheme({
         fontWeight: 'bold', // Normally, it is "semibold"
         borderRadius: 'none',
         textTransform: 'uppercase',
+        fontFamily: `'Poppins', sans-serif`,
+        letterSpacing: '0.1rem',
       },
     },
     Badge: {
