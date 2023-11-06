@@ -2,6 +2,7 @@ import React from 'react'
 import { Flex, Icon, Image, Link } from '@chakra-ui/react'
 import { NavLink as RouterLink } from 'react-router-dom'
 import { LuFacebook, LuInstagram } from "react-icons/lu";
+import logo from '/logo.png'
 import NavLink from './NavLink'
 
 const Navbar = () => {
@@ -28,7 +29,7 @@ const Navbar = () => {
           <Image
             boxSize='3.2rem'
             objectFit='cover'
-            src='/logo.png'
+            src={logo}
             alt='Logo do site'
           />
         </Link>

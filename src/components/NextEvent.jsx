@@ -2,6 +2,7 @@ import React from 'react'
 import { Badge, Button, Flex, Icon, Image, Text } from '@chakra-ui/react'
 import { LuMapPin, LuCalendarDays } from "react-icons/lu";
 import evento from '/arte_banner.jpg'
+import vector_bubble from '/vector_bubble.svg'
 import Wrapper from './Wrapper'
 import SubscribeDrawer from './subscribe/SubscribeDrawer';
 
@@ -75,7 +76,7 @@ const NextEvent = () => {
           minW={280}
           flex={1}
           justify='center'
-          bgImage="url('/vector_bubble.svg')"
+          bgImage={vector_bubble}
           bgPosition="center"
           bgSize='contain'
           bgRepeat='no-repeat'
