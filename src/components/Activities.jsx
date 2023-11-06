@@ -13,15 +13,17 @@ const Activities = () => {
 
       <Flex flexWrap='wrap' w='full' gap={4} justify='space-evenly'>
         <ImgDescription image={imgGincana} title='Gincana'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry
+          Não esqueça de trazer aquela roupa velha pra sujar, vamos ter diversas atividades de interação!
         </ImgDescription>
 
         <ImgDescription image={imgFantasia} title='Festa à fantasia'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry
+          Festa com tema bíblico, podendo ser personagem, lugares, animais e até objetos citados na Bíblia!
         </ImgDescription>
 
         <ImgDescription image={imgNeon} title='Festa neon'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry
+          Traga sua roupa neon, tinta neon,
+          o que quiser hahaha!
+          Será uma festa com muitas cores.
         </ImgDescription>
       </Flex>
     </Wrapper>

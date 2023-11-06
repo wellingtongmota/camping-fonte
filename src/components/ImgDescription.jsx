@@ -23,7 +23,7 @@ const ImgDescription = ({ children, image, title }) => {
       <Stack>
         <CardBody px={0} py={4}>
           <Heading
-            size={{ base: 'md', sm: 'sm', md: 'md', lg: 'lg' }}
+            fontSize={['lg', 'xl', '2xl', '3xl']}
             color='teal.900'
             fontWeight='normal'
             w='full'
@@ -33,7 +33,7 @@ const ImgDescription = ({ children, image, title }) => {
             {title}
           </Heading>
 
-          <Text py='2'>
+          <Text py='2' fontSize={['sm', 'md']}>
             {children}
           </Text>
         </CardBody>

@@ -13,15 +13,15 @@ const Leisure = () => {
 
       <Flex flexWrap='wrap' w='full' gap={4} justify='space-evenly'>
         <ImgDescription image={imgGincana} title='Gincana'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry
+        No retiro de jovens, a piscina é o lugar perfeito para relaxar, refrescar-se e se divertir ao sol.
         </ImgDescription>
 
         <ImgDescription image={imgFantasia} title='Festa à fantasia'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry
+        Descontração e diversão, onde os laços de amizade se fortalecem e as memórias se formam.
         </ImgDescription>
 
         <ImgDescription image={imgNeon} title='Festa neon'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry
+        Um lembrete de que o esporte é uma forma de se manter ativo e saudável enquanto se diverte.
         </ImgDescription>
       </Flex>
 
