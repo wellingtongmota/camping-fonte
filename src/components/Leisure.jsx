@@ -3,25 +3,25 @@ import { Flex } from '@chakra-ui/react'
 import ImgDescription from './ImgDescription'
 import Wrapper from './Wrapper'
 
-import imgGincana from '../images/GINCANA.jpg'
-import imgFantasia from '../images/FANTASIA_temp.jpg'
-import imgNeon from '../images/NEON.jpg'
+import imgPiscina from '../images/PISCINA.jpg'
+import imgSinuca from '../images/SINUCA.jpg'
+import imgFutebol from '../images/FUTEBOL.jpg'
 
 const Leisure = () => {
   return (
     <Wrapper justify='center' title='Áreas de lazer'>
 
       <Flex flexWrap='wrap' w='full' gap={4} justify='space-evenly'>
-        <ImgDescription image={imgGincana} title='Gincana'>
-        No retiro de jovens, a piscina é o lugar perfeito para relaxar, refrescar-se e se divertir ao sol.
+        <ImgDescription image={imgPiscina} title='Piscina'>
+          No retiro de jovens, a piscina é o lugar perfeito para relaxar, refrescar-se e se divertir ao sol.
         </ImgDescription>
 
-        <ImgDescription image={imgFantasia} title='Festa à fantasia'>
-        Descontração e diversão, onde os laços de amizade se fortalecem e as memórias se formam.
+        <ImgDescription image={imgSinuca} title='Sinuca'>
+          Descontração e diversão, onde os laços de amizade se fortalecem e as memórias se formam.
         </ImgDescription>
 
-        <ImgDescription image={imgNeon} title='Festa neon'>
-        Um lembrete de que o esporte é uma forma de se manter ativo e saudável enquanto se diverte.
+        <ImgDescription image={imgFutebol} title='Futebol'>
+          Um lembrete de que o esporte é uma forma de se manter ativo e saudável enquanto se diverte.
         </ImgDescription>
       </Flex>
 
