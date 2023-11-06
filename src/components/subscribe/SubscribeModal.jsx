@@ -48,7 +48,7 @@ const SubscribeModal = (props) => {
             {props.children}
           </Flex>
 
-          <Modal blockScrollOnMount={true} isOpen={isOpen} onClose={onClose} size={['full', 'lg']} scrollBehavior='inside' isCentered>
+          <Modal blockScrollOnMount={true} isOpen={isOpen} onClose={onClose} size={['full', 'lg']} isCentered>
             <ModalOverlay />
             <ModalContent borderRadius='none'>
               <ModalHeader>Realizar inscrição</ModalHeader>
