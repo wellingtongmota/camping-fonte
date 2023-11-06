@@ -23,7 +23,6 @@ const theme = extendTheme({
         borderRadius: 'none',
         textTransform: 'uppercase',
         fontFamily: `'Poppins', sans-serif`,
-        letterSpacing: '0.1rem',
       },
     },
     Badge: {

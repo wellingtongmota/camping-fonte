@@ -1,6 +1,17 @@
-import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Input, useDisclosure } from '@chakra-ui/react'
 import React, { useRef } from 'react'
-
+import {
+  Button,
+  Drawer,
+  DrawerBody,
+  DrawerCloseButton,
+  DrawerContent,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  Flex,
+  Input,
+  useDisclosure
+} from '@chakra-ui/react'
 
 const SubscribeDrawer = (props) => {
 
@@ -18,6 +29,7 @@ const SubscribeDrawer = (props) => {
         placement='right'
         onClose={onClose}
         finalFocusRef={btnRef}
+        size={['full', 'md']}
       >
         <DrawerOverlay />
         <DrawerContent>
