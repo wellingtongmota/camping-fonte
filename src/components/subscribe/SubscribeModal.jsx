@@ -85,6 +85,7 @@ const SubscribeModal = (props) => {
                   <SubscribeInput
                     label='E-mail:'
                     name='email'
+                    type='email'
                     onChange={handleChange}
                     placeholder='Digite seu e-mail'
                     errors={errors.email}
