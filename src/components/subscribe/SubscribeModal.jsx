@@ -26,18 +26,18 @@ const SubscribeModal = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   const subscribeSchema = Yup.object().shape({
-    name: 
+    name:
       Yup.string()
-      .min(2, 'Muito curto!')
-      .max(50, 'Muito longo!'),
-    email: 
+        .min(2, 'Muito curto!')
+        .max(50, 'Muito longo!'),
+    email:
       Yup.string().
-      email('E-mail inválido'),
-    phone: 
+        email('E-mail inválido'),
+    phone:
       Yup.string()
-      .min(11, 'Muito curto!')
-      .max(11, 'Muito longo!')
-      .matches(/^[0-9]+$/, 'Número inválido', { excludeEmptyString: true })
+        .min(11, 'Muito curto!')
+        .max(11, 'Muito longo!')
+        .matches(/^[0-9]+$/, 'Número inválido', { excludeEmptyString: true })
   });
 
   return (
@@ -92,6 +92,7 @@ const SubscribeModal = (props) => {
 
                   <SubscribeInput
                     label='Celular (WhatsApp):'
+                    type='number'
                     name='phone'
                     onChange={handleChange}
                     placeholder='Digite seu número'
