@@ -13,7 +13,7 @@ const SubscribeInput = ({ label, name, type = 'text', icon, placeholder, errors,
         <FormLabel>{label}</FormLabel>
       }
 
-      <InputGroup size={['md', 'lg']}>
+      <InputGroup size='md'>
         {icon !== undefined &&
           <InputLeftElement pointerEvents='none' color='gray.600'>
             {icon}

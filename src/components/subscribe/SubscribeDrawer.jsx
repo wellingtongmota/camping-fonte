@@ -5,20 +5,18 @@ import {
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
+  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   Flex,
   FormControl,
   FormHelperText,
   FormLabel,
-  Input,
-  Radio,
   RadioGroup,
-  Spacer,
   Stack,
   useDisclosure
 } from '@chakra-ui/react'
-import { Field, Form, Formik } from 'formik'
+import { Form, Formik } from 'formik'
 import SubscribeInput from './SubscribeInput'
 import SubscribeRadio from './SubscribeRadio'
 
@@ -63,13 +61,11 @@ const SubscribeDrawer = (props) => {
               <DrawerCloseButton />
               <DrawerHeader>Realizar inscrição</DrawerHeader>
 
-              <DrawerBody gap={2}>
-
-                <Flex as={Form} flexDirection='column' gap={6}>
+              <DrawerBody>
+                <Stack as={Form} id='next-event' spacing={6}>
                   <SubscribeInput
                     label='Nome:'
                     name='name'
-                    // icon={<LuUser />}
                     onChange={handleChange}
                     placeholder='Digite seu nome completo'
                     errors={errors.name}
@@ -78,7 +74,6 @@ const SubscribeDrawer = (props) => {
                   <SubscribeInput
                     label='E-mail:'
                     name='email'
-                    // icon={<LuUser />}
                     onChange={handleChange}
                     placeholder='Digite seu e-mail'
                     errors={errors.email}
@@ -87,7 +82,6 @@ const SubscribeDrawer = (props) => {
                   <SubscribeInput
                     label='Celular (WhatsApp):'
                     name='phone'
-                    // icon={<LuUser />}
                     onChange={handleChange}
                     placeholder='Digite seu número'
                     errors={errors.phone}
@@ -129,24 +123,22 @@ const SubscribeDrawer = (props) => {
                       Malas e outros itens serão transportados em um caminhão disponibilizado no dia anterior ao evento.
                     </FormHelperText>
                   </FormControl>
-
-                  <Spacer />
-
-                  <Flex justifyContent='end' pb={2}>
-                    <Button variant='outline' mr={3} onClick={onClose}>
-                      Cancelar
-                    </Button>
-                    <Button
-                      type='submit'
-                      colorScheme='teal'
-                      isLoading={isSubmitting}
-                      loadingText='Enviando'
-                    >
-                      Enviar
-                    </Button>
-                  </Flex>
-                </Flex>
+                </Stack>
               </DrawerBody>
+              <DrawerFooter>
+                <Button variant='outline' mr={3} onClick={onClose}>
+                  Cancelar
+                </Button>
+                <Button
+                  type='submit'
+                  form='next-event'
+                  colorScheme='teal'
+                  isLoading={isSubmitting}
+                  loadingText='Enviando'
+                >
+                  Enviar
+                </Button>
+              </DrawerFooter>
             </DrawerContent>
           </Drawer>
         </Flex>

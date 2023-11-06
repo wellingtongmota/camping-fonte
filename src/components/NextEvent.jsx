@@ -4,7 +4,7 @@ import { LuMapPin, LuCalendarDays } from "react-icons/lu";
 import evento from '/arte_banner.jpg'
 import vector_bubble from '/vector_bubble.svg'
 import Wrapper from './Wrapper'
-import SubscribeDrawer from './subscribe/SubscribeDrawer';
+import SubscribeModal from './subscribe/SubscribeModal';
 
 const NextEvent = () => {
   return (
@@ -58,7 +58,8 @@ const NextEvent = () => {
             </Flex>
           </Flex>
 
-          <SubscribeDrawer w='full'>
+
+          <SubscribeModal>
             <Button
               mt={[6, 10]}
               w='full'
@@ -67,7 +68,8 @@ const NextEvent = () => {
             >
               Realizar inscrição
             </Button>
-          </SubscribeDrawer>
+          </SubscribeModal>
+
 
         </Flex>
 
