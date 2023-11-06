@@ -1,5 +1,4 @@
 import React from 'react'
-import { Form, Formik } from 'formik'
 import {
   Button,
   Flex,
@@ -17,12 +16,29 @@ import {
   Stack,
   useDisclosure
 } from '@chakra-ui/react'
+import { Form, Formik } from 'formik'
+import * as Yup from 'yup'
 import SubscribeInput from './SubscribeInput'
 import SubscribeRadio from './SubscribeRadio'
 
 const SubscribeModal = (props) => {
 
   const { isOpen, onOpen, onClose } = useDisclosure()
+
+  const subscribeSchema = Yup.object().shape({
+    name: 
+      Yup.string()
+      .min(2, 'Muito curto!')
+      .max(50, 'Muito longo!'),
+    email: 
+      Yup.string().
+      email('E-mail inválido'),
+    phone: 
+      Yup.string()
+      .min(11, 'Muito curto!')
+      .max(11, 'Muito longo!')
+      .matches(/^[0-9]+$/, 'Número inválido', { excludeEmptyString: true })
+  });
 
   return (
     <Formik
@@ -34,6 +50,8 @@ const SubscribeModal = (props) => {
         ground: '',
         transport: '',
       }}
+
+      validationSchema={subscribeSchema}
 
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
