@@ -16,8 +16,7 @@ const Questions = () => {
       flexDirection='column'
       justify='center'
       align='center'
-      // border='2px solid red'
-      py={[2, 4, 6]}
+      py={[2, 4, 8]}
       gap={[2, 4, 6]}
       px={[2, 4]}
     >
@@ -28,7 +27,7 @@ const Questions = () => {
         w='full'
         flexDirection='column'
         py={[4, 8]}
-        px={[4, 6, 10]}
+        px={[4, 6, 8]}
       >
         <QuestionsForm />
       </Flex>
