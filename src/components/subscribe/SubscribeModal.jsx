@@ -34,6 +34,7 @@ const SubscribeModal = (props) => {
         title: 'Sucesso',
         description: `Dados enviados!`,
         status: 'success',
+        position: 'top',
         variant: 'top-accent',
         duration: 5000,
         isClosable: true,
@@ -43,6 +44,7 @@ const SubscribeModal = (props) => {
         title: `Erro ${response.status}`,
         description: `Erro ao enviar`,
         status: 'error',
+        position: 'top',
         variant: 'top-accent',
         duration: 5000,
         isClosable: true,
@@ -74,6 +76,7 @@ const SubscribeModal = (props) => {
         church: '',
         ground: '',
         transport: '',
+        payment: '',
       }}
 
       validationSchema={subscribeSchema}
@@ -86,7 +89,8 @@ const SubscribeModal = (props) => {
       // }}
 
       onSubmit={async (values, { resetForm }) => {
-        await emailjs.send("service_7cxlanf", "template_0aum4uu", values, "4EmDuHdzmOexXnitH")
+        await emailjs.send("service_7cxlanf", "template_0aum4uu", values, "4EmDuHdzmOexXnitH") // Camping
+          // await emailjs.send("service_d3qqm7b", "template_1w1l35g", values, "h65zWycJmVYy8bw1R")
           .then(response => {
             console.log(response.status, response.text)
             resetForm()
@@ -172,6 +176,20 @@ const SubscribeModal = (props) => {
                     <FormHelperText>
                       Lembrando que o transporte é permitido apenas com mochila de colo.
                       Malas e outros itens serão transportados em um caminhão disponibilizado no dia anterior ao evento.
+                    </FormHelperText>
+                  </FormControl>
+
+                  <FormControl isRequired>
+                    <FormLabel>Método de pagamento:</FormLabel>
+                    <RadioGroup name='payment'>
+                      <Stack direction='column'>
+                        <SubscribeRadio name='payment' onChange={handleChange} value='PIX' />
+                        <SubscribeRadio name='payment' onChange={handleChange} value='Boleto' />
+                        <SubscribeRadio name='payment' onChange={handleChange} value='Cartão de crédito' />
+                      </Stack>
+                    </RadioGroup>
+                    <FormHelperText>
+                      Entraremos em contato para finalizar o método de pagamento.
                     </FormHelperText>
                   </FormControl>
                 </Stack>
