@@ -86,7 +86,7 @@ const SubscribeModal = (props) => {
       // }}
 
       onSubmit={async (values, { resetForm }) => {
-        await emailjs.send("service_d3qqm7b", "template_1w1l35g", values, "h65zWycJmVYy8bw1R")
+        await emailjs.send("service_7cxlanf", "template_0aum4uu", values, "4EmDuHdzmOexXnitH")
           .then(response => {
             console.log(response.status, response.text)
             resetForm()
