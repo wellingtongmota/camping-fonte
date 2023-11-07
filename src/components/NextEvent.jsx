@@ -67,6 +67,7 @@ const NextEvent = (props) => {
                 w='full'
                 letterSpacing='0.2rem'
                 colorScheme='teal'
+                size={['md', 'lg']}
               >
                 Realizar inscrição
               </Button>

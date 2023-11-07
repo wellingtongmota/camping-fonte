@@ -4,7 +4,7 @@ import { Flex, Heading } from '@chakra-ui/react'
 const Wrapper = (props) => {
   return (
     <Flex
-      pt={[8, 12]}
+      pt={[8, 10]}
       px={2}
       w='full'
       flexDirection='column'
