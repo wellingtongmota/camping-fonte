@@ -10,8 +10,8 @@ const Home = () => {
     <Container>
       {/* <Banner /> */}
 
-      <Container maxW='5xl'>
-        <NextEvent />
+      <Container>
+        <NextEvent maxW='4xl'/>
         <Activities />
         <Leisure />
       </Container>
