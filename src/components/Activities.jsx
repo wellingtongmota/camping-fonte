@@ -4,7 +4,7 @@ import ImgDescription from './ImgDescription'
 import Wrapper from './Wrapper'
 
 import imgGincana from '../images/GINCANA.jpg'
-import imgFantasia from '../images/FANTASIA_temp.jpg'
+import imgFantasia from '../images/FANTASIA.jpeg'
 import imgNeon from '../images/NEON.jpg'
 
 const Activities = (props) => {
