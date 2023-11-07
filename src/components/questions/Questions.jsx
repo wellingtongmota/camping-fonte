@@ -20,7 +20,7 @@ const Questions = () => {
       gap={[2, 4, 6]}
       px={[2, 4]}
     >
-      <Heading color='white' textAlign='center'>Tem perguntas?<br/>Nos envie uma mensagem</Heading>
+      <Heading color='white' textAlign='center'>Alguma dúvida?<br/>Nos envie uma mensagem</Heading>
       <Flex
         bg='whiteAlpha.900'
         maxW='xl'

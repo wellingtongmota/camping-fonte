@@ -33,7 +33,7 @@ const ImgDescription = ({ children, image, title }) => {
             {title}
           </Heading>
 
-          <Text py='2' fontSize={['sm', 'md']}>
+          <Text py='2' textAlign='center' fontSize={['sm', 'md']}>
             {children}
           </Text>
         </CardBody>

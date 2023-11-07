@@ -118,7 +118,7 @@ const QuestionsForm = () => {
           <Button
             mt={6}
             type='submit'
-            letterSpacing='widest'
+            letterSpacing='wider'
             colorScheme='teal'
             isLoading={isSubmitting}
             loadingText='Enviando'
