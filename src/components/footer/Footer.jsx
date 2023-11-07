@@ -25,7 +25,7 @@ const Footer = () => {
         <Heading fontSize='xl'>Pindamonhangaba</Heading>
       </VStack>
 
-      <FooterSection title='Endreço' flex={1}>
+      <FooterSection title='Endereço' flex={1}>
         Igreja Apostólica Fonte da Vida
         R. Dr. Fontes Júnior, 137
         CEP - 12420-560
