@@ -14,16 +14,41 @@ import {
   ModalOverlay,
   RadioGroup,
   Stack,
-  useDisclosure
+  useDisclosure,
+  useToast
 } from '@chakra-ui/react'
 import { Form, Formik } from 'formik'
 import * as Yup from 'yup'
+import emailjs from '@emailjs/browser'
 import SubscribeInput from './SubscribeInput'
 import SubscribeRadio from './SubscribeRadio'
 
 const SubscribeModal = (props) => {
 
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const toast = useToast()
+
+  const messageServer = (response) => {
+    if (response.status === 200) {
+      toast({
+        title: 'Sucesso',
+        description: `Dados enviados!`,
+        status: 'success',
+        variant: 'top-accent',
+        duration: 5000,
+        isClosable: true,
+      })
+    } else {
+      toast({
+        title: `Erro ${response.status}`,
+        description: `Erro ao enviar`,
+        status: 'error',
+        variant: 'top-accent',
+        duration: 5000,
+        isClosable: true,
+      })
+    }
+  }
 
   const subscribeSchema = Yup.object().shape({
     name:
@@ -53,11 +78,24 @@ const SubscribeModal = (props) => {
 
       validationSchema={subscribeSchema}
 
-      onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
+      // onSubmit={(values, { setSubmitting }) => {
+      //   setTimeout(() => {
+      //     alert(JSON.stringify(values, null, 2));
+      //     setSubmitting(false);
+      //   }, 400);
+      // }}
+
+      onSubmit={async (values, { resetForm }) => {
+        await emailjs.send("service_d3qqm7b", "template_1w1l35g", values, "h65zWycJmVYy8bw1R")
+          .then(response => {
+            console.log(response.status, response.text)
+            resetForm()
+            messageServer(response)
+          })
+          .catch(err => {
+            console.log('Erro: ', err)
+            messageServer(err)
+          })
       }}
     >
       {({ isSubmitting, errors, handleChange }) => (
