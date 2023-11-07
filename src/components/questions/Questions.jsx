@@ -23,7 +23,7 @@ const Questions = () => {
     >
       <Heading color='white' textAlign='center'>Tem perguntas?<br/>Nos envie uma mensagem</Heading>
       <Flex
-        bg='whiteAlpha.800'
+        bg='whiteAlpha.900'
         maxW='xl'
         w='full'
         flexDirection='column'
