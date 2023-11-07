@@ -3,7 +3,7 @@ import { Flex } from '@chakra-ui/react'
 import ImgDescription from './ImgDescription'
 import Wrapper from './Wrapper'
 
-import imgPiscina from '../images/PISCINA.jpg'
+import imgPiscina from '../images/PISCINA_dois.jpg'
 import imgSinuca from '../images/SINUCA.jpg'
 import imgFutebol from '../images/FUTEBOL.jpg'
 
