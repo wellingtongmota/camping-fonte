@@ -34,7 +34,9 @@ const Footer = () => {
 
       <FooterSection title='Contato' flex={1}>
         (12) 98193-9793 <br />
-        acamp.atitude.inscricao@gmail.com
+        <Link href='mailto:acamp.atitude.inscricao@gmail.com' isExternal>
+          acamp.atitude.inscricao@gmail.com
+        </Link>
       </FooterSection>
 
       <FooterSection title='Mídias sociais' flex={1}>

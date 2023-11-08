@@ -43,7 +43,7 @@ const NextEvent = (props) => {
               >
                 <Text fontWeight='medium'>
                   <span>RECANTO BOMFIM:</span> Estrada José Félix Monteiro de Mossoró,
-                  4813. Estrada do Pinheirinho, Taubaté - São Paulo - Brasil
+                  nº 4813 - Estrada do Pinheirinho, Taubaté - São Paulo - Brasil
                 </Text>
               </Flex>
             </Flex>
