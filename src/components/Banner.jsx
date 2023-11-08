@@ -13,12 +13,10 @@ const Banner = () => {
       // objectFit='cover'
       bgRepeat="no-repeat"
       filter='auto' brightness='80%'
-
       flexDirection='column'
       justify='center'
       align='center'
       color='white'
-    // border='2px solid blue'
     >
 
       <Flex

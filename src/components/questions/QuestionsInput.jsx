@@ -1,5 +1,12 @@
 import React from 'react'
-import { FormControl, FormErrorMessage, FormHelperText, FormLabel, Input, InputGroup, InputLeftElement, Text } from '@chakra-ui/react'
+import {
+  FormControl,
+  FormHelperText,
+  FormLabel,
+  Input,
+  InputGroup,
+  InputLeftElement
+} from '@chakra-ui/react'
 import { Field } from 'formik'
 
 const QuestionsInput = ({ label, name, type = 'text', icon, placeholder, errors, onChange }) => {

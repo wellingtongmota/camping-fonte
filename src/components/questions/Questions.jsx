@@ -1,6 +1,6 @@
 import React from 'react'
 import bgQuestions from '/bg_questions.jpg'
-import { Flex, Heading, Text } from '@chakra-ui/react'
+import { Flex, Heading } from '@chakra-ui/react'
 import QuestionsForm from './QuestionsForm'
 
 const Questions = () => {
