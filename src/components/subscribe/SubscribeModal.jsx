@@ -118,7 +118,7 @@ const SubscribeModal = (props) => {
                     label='Nome:'
                     name='name'
                     onChange={handleChange}
-                    placeholder='Digite seu nome completo'
+                    placeholder='Insira seu nome completo'
                     errors={errors.name}
                   />
 
@@ -127,7 +127,7 @@ const SubscribeModal = (props) => {
                     name='email'
                     type='email'
                     onChange={handleChange}
-                    placeholder='Digite seu e-mail'
+                    placeholder='Insira seu e-mail'
                     errors={errors.email}
                   />
 
@@ -136,7 +136,7 @@ const SubscribeModal = (props) => {
                     type='number'
                     name='phone'
                     onChange={handleChange}
-                    placeholder='Digite seu número'
+                    placeholder='Insira seu número'
                     errors={errors.phone}
                   />
 
