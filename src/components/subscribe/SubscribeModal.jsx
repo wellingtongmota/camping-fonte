@@ -81,13 +81,6 @@ const SubscribeModal = (props) => {
 
       validationSchema={subscribeSchema}
 
-      // onSubmit={(values, { setSubmitting }) => {
-      //   setTimeout(() => {
-      //     alert(JSON.stringify(values, null, 2));
-      //     setSubmitting(false);
-      //   }, 400);
-      // }}
-
       onSubmit={async (values, { resetForm }) => {
         await emailjs.send(
           import.meta.env.VITE_EMAILJS_SERVICE,
