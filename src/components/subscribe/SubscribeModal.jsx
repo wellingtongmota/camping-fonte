@@ -92,6 +92,7 @@ const SubscribeModal = (props) => {
             console.log(response.status, response.text)
             resetForm()
             messageServer(response)
+            onClose()
           })
           .catch(err => {
             console.log('Erro: ', err)
