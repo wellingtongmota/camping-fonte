@@ -72,8 +72,12 @@ const QuestionsForm = () => {
       // }}
 
       onSubmit={async (values, { resetForm }) => {
-        // await emailjs.send("service_d3qqm7b", "template_1w1l35g", values, "h65zWycJmVYy8bw1R")
-        await emailjs.send("service_7cxlanf", "template_8k7uuus", values, "4EmDuHdzmOexXnitH") // Camping
+        await emailjs.send(
+          import.meta.env.VITE_EMAILJS_SERVICE,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_QUESTIONS,
+          values,
+          import.meta.env.VITE_EMAILJS_KEY
+        )
           .then(response => {
             console.log(response.status, response.text)
             resetForm()
