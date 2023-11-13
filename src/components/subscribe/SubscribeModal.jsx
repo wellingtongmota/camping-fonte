@@ -89,8 +89,7 @@ const SubscribeModal = (props) => {
       // }}
 
       onSubmit={async (values, { resetForm }) => {
-        // await emailjs.send("service_7cxlanf", "template_0aum4uu", values, "4EmDuHdzmOexXnitH") // Camping
-          await emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE, import.meta.env.VITE_EMAILJS_TEMPLATE, values, import.meta.env.VITE_EMAILJS_KEY)
+        await emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE, import.meta.env.VITE_EMAILJS_TEMPLATE, values, import.meta.env.VITE_EMAILJS_KEY)
           .then(response => {
             console.log(response.status, response.text)
             resetForm()
