@@ -23,8 +23,8 @@ const QuestionsForm = () => {
         title: 'Sucesso',
         description: `Dados enviados!`,
         status: 'success',
-        position: 'top',
-        variant: 'top-accent',
+        position: 'bottom',
+        variant: 'subtle',
         duration: 5000,
         isClosable: true,
       })
@@ -33,8 +33,8 @@ const QuestionsForm = () => {
         title: `Erro ${response.status}`,
         description: `Erro ao enviar`,
         status: 'error',
-        position: 'top',
-        variant: 'top-accent',
+        position: 'bottom',
+        variant: 'subtle',
         duration: 5000,
         isClosable: true,
       })
