@@ -12,7 +12,7 @@ const NextEvent = (props) => {
 
       <Flex flexDirection='column' w='full' align='center'>
         <Flex w='full' pb={2} {...props}>
-          <Badge fontSize={{ base: 'xs', md: 'md', lg: 'lg' }} textTransform='uppercase' alignSelf='flex-start'>
+          <Badge fontSize={{ base: 'xs', md: 'md', lg: 'md' }} textTransform='uppercase' alignSelf='flex-start'>
             Próximo evento
           </Badge>
         </Flex>

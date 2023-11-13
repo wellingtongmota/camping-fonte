@@ -8,7 +8,7 @@ import Questions from '../components/questions/Questions'
 const Home = () => {
   return (
     <Container>
-      <NextEvent maxW='5xl' />
+      <NextEvent maxW='4xl' />
       <Activities maxW='5xl' />
       <Leisure maxW='5xl' />
       <Questions />
