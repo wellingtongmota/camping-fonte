@@ -48,9 +48,6 @@ const theme = extendTheme({
       span: {
         fontWeight: 'semibold'
       },
-      span: {
-        fontWeight: 'semibold',
-      },
     },
   },
   fonts: {
